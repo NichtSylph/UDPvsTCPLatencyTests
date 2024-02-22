@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC445 - TCP vs UDP</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .explanation {
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TCP vs UDP Benchmark Graphs by Joel Santos</h1>
+        <div>
+            <h2>Benchmark RTT's</h2>
+            <img src="" alt="rtts">
+            <h2>Benchmark Throughputs</h2>
+            <img src="" alt="throughputs">
+        </div>
+        <div class="explanation">
+            <h2>Performance Analysis</h2>
+            <p> Based on the values of the two graphs, TCP is a more reliable source for sending data due to its ability to retransmit lost packets.</p> 
+            <p>However, UDP is faster and more efficient for sending data. This can be shown on the speeds of the throughputs and RTTs of the 3 PCs to Network 1 and Network 2.</p> 
+            <p>For low size files where the latency is also low, UDP is clearly superior and is able to send messages faster than TCP.</p> 
+        </div>        
+    </div>
+</body>
+</html>
