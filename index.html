@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC445 - TCP vs UDP</title>
+    <title>pj2js</title>
     <style>
         .container {
             text-align: center;
@@ -22,22 +22,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>TCP vs UDP Benchmark Graphs by Joel Santos</h1>
+        <h1>CSC 445 Project 2 Joel Santos - File Transfer Protocol</h1>
         <div>
-            <h2>Benchmark 1</h2>
-            <img src="https://github.com/NichtSylph/UDPvsTCPLatencyTests/blob/main/resources/data1.png?raw=true" alt="rtts1">
-            <h2>Benchmark 2</h2>
-            <img src="https://github.com/NichtSylph/UDPvsTCPLatencyTests/blob/main/resources/data2.png?raw=true" alt="rtts2">
-            <h2>Benchmark 3</h2>
-            <img src="https://github.com/NichtSylph/UDPvsTCPLatencyTests/blob/main/resources/data3.png?raw=true" alt="throughputs1">
-            <h2>Benchmark 4</h2>
-            <img src="https://github.com/NichtSylph/UDPvsTCPLatencyTests/blob/main/resources/data4.png?raw=true" alt="throughputs2">
+            <h2>Benchmark 1 - Host pi.cs.oswego.edu Client HomePC - upload 5MB File/WindowSize 32/NoDrops Bytes/second</h2>
+            <img src="https://raw.githubusercontent.com/NichtSylph/filetransferapp/main/images/graph1.png" alt="img1">
+            <h2>Benchmark 2 - Host pi.cs.oswego.edu Client HomePC - download 5MB File/WindowSize 14/Drops</h2>
+            <img src="https://raw.githubusercontent.com/NichtSylph/filetransferapp/main/images/graph2.png" alt="img2">
+            <h2>Benchmark 3 - Host pi.cs.oswego moxie.cs.oswego.edu Client HomePC - upload 5MB File/WindowSize 18/NoDrops</h2>
+            <img src="https://raw.githubusercontent.com/NichtSylph/filetransferapp/main/images/graph3.png" alt="img3">
+            <h2>Benchmark 4 - Host moxie.cs.oswego.edu Client HomePC - download 5MB File/WindowSize 40/Drops</h2>
+            <img src="https://raw.githubusercontent.com/NichtSylph/filetransferapp/main/images/graph4.png" alt="img4">
         </div>
         <div class="explanation">
             <h2>Performance Analysis</h2>
-            <p> Based on the values of the two graphs, TCP is a more reliable source for sending data due to its ability to retransmit lost packets.</p> 
-            <p>However, UDP is faster and more efficient for sending data. This can be shown on the speeds of the throughputs and RTTs of the 3 PCs to Network 1 and Network 2.</p> 
-            <p>For low size files where the latency is also low, UDP is clearly superior and is able to send messages faster than TCP.</p> 
+            <p>Depending on the host where files were uploaded and downloaded from, the throughputs vary quite a bit depending on the window size, since it allows for sending</p>
+            <p>more bits at a time. The larger the window size, the more packets can be sent before an acknowledgment is received.</p>
         </div>        
     </div>
 </body>
