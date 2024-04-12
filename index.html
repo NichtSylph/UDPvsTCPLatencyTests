@@ -35,8 +35,10 @@
         </div>
         <div class="explanation">
             <h2>Performance Analysis</h2>
-            <p>Depending on the host where files were uploaded and downloaded from, the throughputs vary quite a bit depending on the window size, since it allows for sending</p>
-            <p>more bits at a time. The larger the window size, the more packets can be sent before an acknowledgment is received.</p>
+            <p>Depending on the host where files were uploaded and downloaded from, the throughputs vary quite a bit depending on the window size, since it allows for sending 
+                more bits at a time. The larger the window size, the more packets can be sent before an acknowledgment is received.</p>
+                <p>During drops it can be seen that with the 1%change some of the packets do not get sent which drops all the way down to 0, this allowed for  
+                    a simulation of a file packate to be retransmitted increasing the time for the file fo finish transferring</p>
         </div>        
     </div>
 </body>
